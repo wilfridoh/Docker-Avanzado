@@ -19,7 +19,7 @@ jobs:
       run: | 
         docker build --platform linux --tag wilfridoh/websiteplatzi:latest -f CI/dockerfile .
     - name: Publish docker image
-      run: |
+      run: | 
         docker push wilfridoh/websiteplatzi:latest
     - name: App service auth
       uses: azure/webapps-deploy@v2
